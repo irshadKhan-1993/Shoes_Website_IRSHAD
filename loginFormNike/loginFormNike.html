@@ -1,0 +1,216 @@
+<html>
+  <head>
+    <title>login.nike.com</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+		* {margin: 0;padding: 0;box-sizing: border-box;}
+		body {
+			background-color: rgb(0, 0, 0);
+		}
+		.main-div {
+			width: 1040px;
+			margin: 50px auto 0px auto;
+			padding: 85px 0px 85px 0px;
+			background-color: #000000;
+			position: relative;
+		}
+		.form-div {
+			width: 360px;
+			margin: 0px auto 0px auto;
+			background-color: #423e3c;
+			border-radius: 10px;
+			opacity: 0.7;
+			border: 1px dotted gray;
+		}
+		.header {
+			text-align: center;
+			color: #cacfd9;
+			font-family: calibri;
+			padding: 15px;
+		}
+		.body-div {
+			margin: 15px 0px 0px 0px; 
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+		.label {
+			color: white;
+			font-family: calibri;
+			margin: 0px 0px 0px 28px;
+			font-weight: bold;
+		}
+		.input {
+			height: 50px;
+			width: 300px;
+			margin: 10px 17px 10px 30px;
+			padding: 10px;
+			background-color: #6b6460;
+			color: white;
+			border: none;
+			font-weight: bold;
+		}
+		.input::placeholder {
+			color: #c9c5c3;
+		}
+		.input:focus {
+			outline: none;
+			border-width: 1px 1px 1px 1px;
+			border-style: solid;
+			border-image: linear-gradient(90deg, #0000ff, #ff6a00) 2;
+		}
+		.login-button {
+			/* margin: 0px 0px 0px 30px; */
+			/* height: 50px; */
+			margin: 0 auto 0 auto;
+			width: 300px;
+			border-radius: 5px;
+			border: none;
+		}
+		.login-button a {
+			padding: 16px 100px;
+			font-size: 17px;
+			display: block;
+			font-weight: bold;
+			text-decoration: none;
+			color: #423e3c;
+		}
+		.footer-div {
+			display: flex;
+			margin: 15px auto 0 auto;
+			align-items: center;
+			width: 300px;
+			gap: 49px;
+			padding: 20px 0px 20px 0px;
+			justify-content: center;
+		}
+		.google-div {
+			background-color: #727885;
+			display: flex;
+			width: 125px;
+			border-radius: 3px;
+		}
+		.google-div a {
+			color: #edeef0;
+			text-decoration: none;
+			font-family: calibri;
+			padding: 10px 22px;
+			font-weight: bold;
+		}
+		.facebook-div {
+			background-color: #727885;
+			display: flex;
+			border-radius: 3px;
+			width: 125px;
+			position: relative;
+			z-index: 9;
+		}
+		.facebook-div a {
+			color: #edeef0;
+			text-decoration: none;
+			padding: 10px 10px;
+			font-family: calibri;
+			font-weight: bold;
+		}
+		i {
+			font-weight: 400;
+    		padding: 11px 0px 10px 10px;
+			color:white;
+		}
+		.blue-div {
+			height: 160px;
+			width: 160px;
+			background: radial-gradient(blue, dodgerblue);
+			border-radius: 50%;
+			margin: -64px 0px 0px 265px;
+			position: absolute;
+			filter: drop-shadow(11px 8px 5px blue);
+		}
+		.orange-div {
+			height: 160px;
+			width: 160px;
+			background: radial-gradient(rgb(240, 35, 24), orange);
+			border-radius: 50%;
+			margin: 341px 0px 0px 607px;
+			position: absolute;
+			filter: drop-shadow(-9px -3px 4px rgb(255, 111, 0));
+		}
+		.blue-div2 {
+			height: 100px;
+			width: 100px;
+			background: radial-gradient(blue, dodgerblue);
+			border-bottom-right-radius: 77px;
+			margin: -443px 0px 0px 331px;
+			position: absolute;
+			filter: blur(10px);
+		}
+		.orange-div2 {
+			height: 105px;
+			width: 106px;
+			background: radial-gradient(rgb(241, 59, 23), orange);
+			border-top-left-radius: 75px;
+			margin: -98px 0px 0px 601px;
+			position: absolute;
+			filter: blur(5px);
+			z-index: 8;
+			opacity: 0.8;
+		}
+    </style>
+  </head>
+  <body>
+    <div class="main-div">
+      <div class="orange-div"></div>
+      <div class="blue-div"></div>
+      <form>
+        <div class="form-div">
+          <div class="header">
+            <h1>Login Here</h1>
+          </div>
+          <div class="body-div">
+            <label for="UserName" class="label">Username</label><!-- <br /> -->
+            <input
+              type="email"
+              name="email"
+              id="UserName"
+              class="input"
+              placeholder="Email or Phone"
+            />
+          </div>
+          <div class="body-div">
+            <label for="passwords" class="label">Password</label><!-- <br /> -->
+            <input
+              type="password"
+              name="password"
+              id="passwords"
+              class="input"
+              placeholder="passwords"
+            />
+          </div>
+          <div class="body-div">
+            <button class="login-button">
+              <a href="#">Log In</a>
+            </button>
+          </div>
+          <div class="footer-div">
+            <div class="google-div">
+              <i class="fa-brands fa-google"></i>
+              <a href="#">Google</a>
+            </div>
+            <div class="facebook-div">
+              <i class="fa-brands fa-facebook"></i>
+              <a href="#">Facebook</a>
+            </div>
+          </div>
+        </div>
+      </form>
+      <div class="blue-div2"></div>
+      <div class="orange-div2"></div>
+    </div>
+  </body>
+</html>

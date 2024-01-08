@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Calibri', sans-serif;
+}
+/* ________________________________ products start _____________________________ */
+.nikeDesigns{
+    position: relative;
+    max-width: 2000px;
+    margin:0 auto 0 auto;
+}
+.nikeDesigns h1{
+    color:#ffffff;
+    background-color: #000000;
+    padding:20px 0px 18px 20px;
+}
+.allDesigns{
+    background-color: #000000;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    max-width: 2000px;
+    align-items: center;
+    justify-items: center;
+    margin: 0 auto 0 auto;
+    padding-bottom: 50px;
+}
+@media (max-width:900px){
+	.allDesigns {
+		grid-template-columns: repeat(2,1fr);
+	}
+}
+@media (max-width:350px){
+	.allDesigns {
+		grid-template-columns: repeat(1,1fr);
+	}
+}
+.grid_div{
+    position: relative;
+    height:100%;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+}
+.shoeDesign{
+    background-color: #18325e;
+    width: 90%;
+    box-shadow: 4px 4px 4px #646363;
+    margin-top: 50px;
+}
+.grid_div_parda{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+    opacity: 0.4;
+}
+.shoeDesign:hover .grid_div_parda{
+    transition: 0.7s linear;
+    top:-100%;
+}
+.shoeDesign:not(:hover) .grid_div_parda{
+    top:0%;
+    transition: 1s ease-in;
+}
+.shoeDesign:hover{
+    box-shadow: 8px 8px 4px #a7a6a6;
+}
+.shoeDesign img{
+    width: 100%;
+    min-height: auto;
+}
+.shoeDesign .shoeModel{
+    color: #ffffff;
+    font-size: 20px;
+    padding:5px 0px 5px 20px;
+}
+.shoeDesign .shoeOtherSpeci{
+    color: #cac5c5;
+    padding:5px 0px 10px 20px;
+}
+.MRP{
+    color: #ffffff;
+    font-family: 'Bahnschrift Light';
+    padding:5px 0px 5px 20px;
+}
+.rating{
+    padding:0px 0px 5px 20px;
+}
+.shoeDesign a{
+    position: relative;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px 10px 0px;
+    margin: 0 auto 0 auto ;
+    text-align: center;
+    font-weight: bold;
+    background-color: #000000;
+    color:#ffffff;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size:20px;
+    transition: 0.5s;
+    overflow: hidden;
+}
+.shoeDesign a:hover{
+    letter-spacing: 5px;
+    color:#ff0000;
+}
+.shiningLine{
+    position:absolute;
+    top:0;
+    left: -7px;
+    height: 100%;
+    width: 2px;
+    visibility: hidden;
+    border-radius: 7px;
+    background: linear-gradient(#fff200,#ff0000);
+}
+.shoeDesign a:hover .shiningLine{
+    visibility: visible;
+    left: 100%;
+    transition: 1s ease-in-out;
+}
+/* ________________________________ products end _____________________________ */
+/*_____________________________ rotate start ________________________________ */
+.round_area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 500px;
+    max-width: 2000px;
+    background: #000000;
+    position: relative;
+    margin:0 auto 0 auto;
+}
+.cube{
+    position:relative;
+    height: 240px;
+    width: 240px;
+    transform-style: preserve-3d;
+    transform: rotateX(-15deg);
+    animation: rotate 5s linear infinite;
+}
+@keyframes rotate{
+    0%  {transform:rotateX(-15deg) rotateY(0deg  );}
+    25% {transform:rotateX(-15deg) rotateY(90deg );}
+    50% {transform:rotateX(-15deg) rotateY(180deg);}
+    100%{transform:rotateX(-15deg) rotateY(360deg);}
+}
+.cube div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+.falak{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    background-size: cover;
+    background-position: 52% 50%;
+    background-repeat: no-repeat;
+    transition: 1s linear;
+}
+.front{
+    transform: rotateY(0deg) translateZ(120px);
+    background-image: url('../nike_Website_Images/nikeshoe1.webp');
+} 
+.right{
+    transform: rotateY(90deg) translateZ(120px);
+    background-image: url('../nike_Website_Images/nikeshoe3.webp');
+} 
+.back{
+    transform: rotateY(180deg) translateZ(120px);
+    background-image: url('../nike_Website_Images/nikeshoe2.webp');
+} 
+.left{
+    transform: rotateY(270deg) translateZ(120px);
+    background-image: url('../nike_Website_Images/nikeshoe4.webp');
+} 
+.top{
+    transform: rotateX(90deg) translateZ(120px);
+    background:white;
+}
+.cube:hover .left{
+    transform: rotateY(270deg) translateZ(340px);
+}
+.cube:hover .right{
+    transform: rotateY(90deg) translateZ(340px);
+}
+.cube:hover .front{
+    transform: rotateY(0deg) translateZ(340px);
+}
+.cube:hover .back{
+    transform: rotateY(180deg) translateZ(340px);
+}
+/*_____________________________ rotate end ________________________________ */
+/*_____________________ go to Home  start _________________________ */
+.Home{
+    background:#000000;
+    padding:100px 0px 100px 0px;
+    text-align: center;
+}
+.Home a{
+    filter: drop-shadow(0 0 5px #0ff);
+    background: #00ffff;
+    text-decoration: none;
+    color: #000000;
+    font-family: Calibri;    
+    height: 70px;
+    width: 70px;  
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    transition: 0.8s;
+    border-radius: 50%;
+    margin: 0 auto 0 auto;
+}
+.Home a:hover{
+    box-shadow: 0 0 5px #00ffff,
+    0 0 25px #00ffff,0 0 50px #00ffff,
+    0 0 100px #00ffff, 0 0 200px #00ffff;
+}
+/*_____________________ go to Home  end _________________________ */
