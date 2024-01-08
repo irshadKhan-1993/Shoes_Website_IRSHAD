@@ -296,8 +296,9 @@
 }
 .banner_p{
     color: var(--heading-color);
-    font-family: 'Bahnschrift Light', sans-serif;
+    font-family: system-ui, 'Bahnschrift Light', sans-serif;
     width: fit-content;
+	font-weight:lighter;
 }
 .shopNow{
     position: relative;
