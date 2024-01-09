@@ -129,6 +129,11 @@
 }
 /* ________________________________ products end _____________________________ */
 /*_____________________________ rotate start ________________________________ */
+	/*
+		Note:- I learned this rotating cube from a Youtube video which link is given below
+		
+		Youtube link - >    https://www.youtube.com/watch?v=nOdDtnHWaDo
+	*/
 .round_area{
     display: flex;
     align-items: center;
