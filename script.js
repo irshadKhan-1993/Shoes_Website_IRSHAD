@@ -1,4 +1,4 @@
-let toggleBar = document.querySelector(".nav_div .nav .toggle_bar");
+/* let toggleBar = document.querySelector(".nav_div .nav .toggle_bar");
 toggleBar.addEventListener("click",()=>{
     let x = document.querySelectorAll(".x");
     let vh100 = document.querySelector(".nav");
@@ -6,4 +6,4 @@ toggleBar.addEventListener("click",()=>{
     x.forEach((element)=>{
         element.classList.toggle("nav_toggle");
     });
-});
+}); */
